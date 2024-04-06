@@ -1,0 +1,554 @@
+/* General styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(../assets/images/photo-bg.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Navigation bar styles */
+/* Styles for the combined navigation bar */
+.combined-nav {
+  display: flex;
+  flex-direction: column;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Styles for the navigation sections */
+.nav-contact-section,
+.main-nav-links-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Styles for the social media links, contact, and CTA button */
+.socials-section ul,
+.contact-section ul,
+.pages-section ul,
+.search-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socials-section ul li,
+.contact-section ul li,
+.pages-section ul li,
+.search-section ul li {
+  margin-right: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.socials-section img {
+  width: 25px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  color: white;
+  background-color: white;
+}
+
+.socials-section img:hover {
+  transform: scale(1.2);
+}
+
+/* Styles for the request a consult button */
+.consult-section .cta-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.consult-section .cta-button:hover {
+  background-color: #2c412d;
+}
+
+/* Styles for the logo */
+.logo-section img {
+  max-width: 50px;
+  height: auto;
+  cursor: pointer;
+}
+
+/* CSS for the logo and site name */
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo-section img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+/* Styles for the pages links */
+.pages-section ul li {
+  margin-right: 15px;
+}
+
+/* Styles for all a tags */
+a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Hover effect for all a tags */
+a:hover {
+  color: #ffc107;
+}
+
+/* Remove underline for all a tags */
+a {
+  text-decoration: none;
+}
+
+/* Styles for the search input and button */
+.search-section input[type="text"],
+.search-section button[type="submit"] {
+  padding: 6px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.search-section input[type="text"]:focus,
+.search-section button[type="submit"]:hover {
+  background-color: #ddd;
+}
+
+/* Styles for the banner section */
+.banner-section {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Styles for the banner image */
+.banner-section img {
+  width: 100%;
+  height: 600px;
+  display: block;
+}
+
+/* Styles for the banner text */
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Styles for the banner text content */
+.banner-text-content {
+  margin-bottom: 20px;
+}
+
+.banner-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.banner-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.banner-cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styles for the banner cta buttons */
+.cta-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.cta-button:hover {
+  background-color: #061a30;
+}
+
+.about-section {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.about-header h2 {
+  color: #fff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-text {
+  flex: 1;
+  padding: 0 20px;
+  color: #fff;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.about-text p {
+  margin-bottom: 20px;
+}
+
+.about-image {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 20px;
+}
+
+.cta-button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #033f60;
+}
+
+.gallery-section {
+  padding: 50px 0;
+  background-color: transparent;
+  text-align: center;
+}
+
+.gallery-header h2 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.gallery-text {
+  color: #fff;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-text p {
+  margin-bottom: 20px;
+}
+
+.carousel-container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel img {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 80vh;
+  scroll-snap-align: start;
+}
+
+.controls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.controls-prev {
+  left: 10px;
+}
+
+.controls-next {
+  right: 10px;
+}
+
+.controls button {
+  font-size: 24px;
+  color: #333;
+  line-height: 1;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+.controls button:hover {
+  color: #000;
+}
+
+.blog-section {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.blog-header h2 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.blog-text {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+}
+
+.blog-section {
+  max-width: 100%;
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: rgba(21, 67, 23, 0.4);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-section h3 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.blog-section img {
+  max-width: 100%;
+  height: 30vh;
+  margin-bottom: 10px;
+}
+
+.blog-section p {
+  color: #fff;
+  line-height: 1.6;
+}
+
+.services-section {
+  padding: 50px 0;
+  background-color: #283106;
+}
+
+.services-header h2 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.services-text {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+}
+
+.services-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.services-card .service-info {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-card .service-image {
+  max-width: 100%;
+  height: 40vh;
+  margin-bottom: 10px;
+}
+
+.service-logo {
+  width: 100%;
+  height: 50px;
+}
+
+.services-card h4 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.services-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.testimonials-text {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  width: 100%;
+  gap: 1.2rem;
+}
+
+.testimonial-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #08b86f;
+}
+
+.testimonials-header {
+  text-align: center;
+}
+
+.testimonial-card p {
+  margin: 0;
+  color: #fff;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo img {
+  width: 100px;
+  height: 100px;
+}
+
+.footer-links ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.footer-links li {
+  margin-right: 15px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-social ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.footer-social li {
+  margin-right: 10px;
+}
+
+.footer-social img {
+  width: 25px;
+  background-color: white;
+}
+
+.footer-info {
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .carousel-container {
+    width: 90%;
+  }
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .combined-nav {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .nav-contact-section,
+  .main-nav-links-section {
+    flex-direction: column;
+  }
+
+  .socials-section ul,
+  .contact-section ul,
+  .pages-section ul,
+  .search-section ul {
+    flex-direction: column;
+  }
+
+  .socials-section img {
+    width: auto;
+    height: 20px;
+    margin-bottom: 5px;
+  }
+
+  .logo-section img {
+    max-width: 60px;
+  }
+
+  .consult-section .cta-button {
+    margin-top: 10px;
+  }
+}
